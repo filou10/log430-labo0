@@ -16,7 +16,7 @@ def fixture_calculator():
 
 def test_app(calculator: Calculator):
 
-    EXPECTED_HELLO_MSG = "== Calculatrice v1.0 =="
+    EXPECTED_HELLO_MSG = "== Calculatrice v1.0 ==ss"
 
     assert EXPECTED_HELLO_MSG == calculator.get_hello_message()
 
