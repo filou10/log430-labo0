@@ -18,6 +18,8 @@ jobs:
       - name: Installer les dépendances
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pytest
+          pip install -e .[dev]
+
+      - name: Lancer pytest avec couverture
+        run: pytest
 
