@@ -9,7 +9,7 @@ Si l’un des tests échoue à cause d’un bug, comment pytest signale-t-il l�
 
 Lorsqu'un test échoue dû à un bug, pytest va signaler l'erreur en affichant un F rouge à côté du fichier où se trouve le test. De plus, il y aura une boîte dans le terminal nommée `FAILURES` qui montrera le assert qui a échoué dans l'exécution du test. Il y aura également un chemin du fichier et la ligne qui échoue dans le test. Par exemple, dans le scénario que j'ai monté dans la capture d'écran plus bas, on peut voir que le test a échoué dans le fichier `tests/test_calculator.py` à la ligne 21.
 
-![alt text](question1.png)
+![question1](question1.png)
 
 
 ## Question 2
@@ -24,6 +24,10 @@ L'étape checkout est exécutée pour cloner le dépôt et avoir le projet prêt
 ## Question 3
 
 Quel approache et quelles commandes avez-vous exécutées pour automatiser le déploiement continu de l'application dans la machine virtuelle ? Veuillez inclure les sorties du terminal et les scripts bash dans votre réponse.
+
+Puisqu’on ne peut pas automatiser à cause des problèmes de connexion au VPN depuis GitHub, il suffit de faire un simple docker build et docker run une fois connecté via SSH.
+
+![alt text](question3.png)
 
 ## Question 4
 
